@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="258.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MoveController">
+   <children>
+      <Button layoutX="154.0" layoutY="309.0" mnemonicParsing="false" onAction="#cancelAction" text="Cancel" />
+      <Button layoutX="98.0" layoutY="309.0" mnemonicParsing="false" onAction="#moveAction" text="Move" />
+      <Button layoutX="39.0" layoutY="309.0" mnemonicParsing="false" onAction="#copyAction" text="Copy" />
+      <ImageView fx:id="moveImageView" fitHeight="128.0" fitWidth="192.0" layoutX="31.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Google%20Drive/Desktop/goose-1459008_1280.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="confirmLabel" layoutX="61.0" layoutY="208.0" text="Confirm Goose to Test" />
+      <ChoiceBox fx:id="toAlbumChoiceBox" layoutX="46.0" layoutY="257.0" prefWidth="150.0" />
+      <Label layoutX="93.0" layoutY="233.0" text="To Album:" />
+   </children>
+</AnchorPane>

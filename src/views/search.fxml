@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SearchController">
+   <children>
+      <Text layoutX="142.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Results" />
+      <ListView fx:id="resultsListView" layoutX="21.0" layoutY="48.0" prefHeight="320.0" prefWidth="317.0" />
+      <Button layoutX="17.0" layoutY="414.0" mnemonicParsing="false" onAction="#createAlbumAction" text="Create into Album" />
+      <TextField fx:id="createAlbumTextField" layoutX="139.0" layoutY="414.0" prefHeight="25.0" prefWidth="153.0" />
+   </children>
+</AnchorPane>

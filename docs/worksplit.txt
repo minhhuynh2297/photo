@@ -1,0 +1,6 @@
+Login Screen	Minh Huynh
+Admin Dashboard	Minh Huynh
+Details View	Minh Huynh
+User Dashboard	Eric Martz
+Move Action	    Eric Martz
+Search Results	Eric Martz

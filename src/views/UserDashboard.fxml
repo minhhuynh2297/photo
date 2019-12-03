@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="UserPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="639.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserDashboardController">
+   <children>
+      <ListView fx:id="albumList" layoutX="13.0" layoutY="79.0" onDragDropped="#handleDrop" onDragOver="#handleRecDragOver" onMouseClicked="#initPhotos" prefHeight="424.0" prefWidth="303.0" />
+      <Button layoutX="39.0" layoutY="521.0" mnemonicParsing="false" onAction="#addAlbumAction" text="Add Album" />
+      <TextField fx:id="addAlbumTextField" layoutX="127.0" layoutY="521.0" />
+      <Label layoutX="28.0" layoutY="62.0" text="Album Name     #  Photos             Date Range" />
+      <Button layoutX="100.0" layoutY="587.0" mnemonicParsing="false" onAction="#deleteAlbumAction" text="Delete Album" />
+      <Button layoutX="52.0" layoutY="554.0" mnemonicParsing="false" onAction="#renameAlbumAction" text="Rename" />
+      <ListView fx:id="photoList" layoutX="342.0" layoutY="79.0" onDragDetected="#handleDragDetected" onDragOver="#handleDragOver" prefHeight="424.0" prefWidth="267.0" />
+      <Label layoutX="419.0" layoutY="58.0" text="Photos in Album:" />
+      <Button layoutX="511.0" layoutY="525.0" mnemonicParsing="false" onAction="#deletePhotoAction" text="Delete" />
+      <Button layoutX="325.0" layoutY="525.0" mnemonicParsing="false" onAction="#addPhotoAction" text="Add Photo" />
+      <Button layoutX="405.0" layoutY="525.0" mnemonicParsing="false" onAction="#detailAction" text="Details" />
+      <Button layoutX="278.0" layoutY="24.0" mnemonicParsing="false" onAction="#makeSearchAction" text="Make Search" />
+      <TextField fx:id="renameAlbumTextField" layoutX="127.0" layoutY="554.0" onDragDropped="#handleDrop" />
+      <Button layoutX="325.0" layoutY="562.0" mnemonicParsing="false" onAction="#moveButtonAction" text="Move/Copy Photo" />
+      <Button layoutX="543.0" layoutY="24.0" mnemonicParsing="false" onAction="#logoutAction" text="Logout" />
+      <Label fx:id="welcomeLabel" layoutX="24.0" layoutY="19.0" text="Welcome User!" />
+   </children>
+</Pane>

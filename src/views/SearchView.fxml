@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="259.0" prefWidth="439.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SearchViewController">
+   <children>
+      <Text layoutX="37.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag 2" />
+      <Text layoutX="36.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag 1" />
+      <ChoiceBox fx:id="tag2ChoiceBox" layoutX="15.0" layoutY="177.0" prefHeight="25.0" prefWidth="73.0" />
+      <TextField fx:id="value2TextField" layoutX="90.0" layoutY="177.0" prefHeight="25.0" prefWidth="73.0" promptText="value2" />
+      <TextField fx:id="value1TextField" layoutX="89.0" layoutY="72.0" prefHeight="25.0" prefWidth="73.0" promptText="value1" />
+      <ChoiceBox fx:id="tag1ChoiceBox" layoutX="14.0" layoutY="72.0" prefHeight="25.0" prefWidth="73.0" />
+      <DatePicker fx:id="toDatePicker" layoutX="193.0" layoutY="113.0" promptText="to Date (Optional)" />
+      <DatePicker fx:id="fromDatePicker" layoutX="193.0" layoutY="72.0" promptText="from Date" />
+      <Button layoutX="167.0" layoutY="220.0" mnemonicParsing="false" onAction="#searchAction" text="Search" />
+      <ChoiceBox fx:id="andorChoiceBox" layoutX="54.0" layoutY="113.0" prefHeight="25.0" prefWidth="73.0" />
+   </children>
+</AnchorPane>
